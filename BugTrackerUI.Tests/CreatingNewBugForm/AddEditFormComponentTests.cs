@@ -25,7 +25,7 @@ namespace M3_BugTrackerUI.Tests.CreatingNewBugForm
 
             var editForm = doc.DocumentNode.Descendants("EditForm")?.FirstOrDefault();
 
-            Assert.True(editForm != null && editForm.Attributes["Model"]?.Value == "AddBug",
+            Assert.True(editForm != null && editForm.Attributes["Model"]?.Value == "@AddBug",
                 @"The `NewBug` component element should contain an `EditForm` component with with a `Model` attribute set to `AddBug`.");
         }
     }
